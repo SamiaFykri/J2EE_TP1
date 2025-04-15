@@ -1,5 +1,5 @@
 # J2EE_TP1
-# Rapport de TP - DAO avec Injection de Dépendances et Couplage Faible en Java
+# DAO avec Injection de Dépendances et Couplage Faible en Java
 
 ## Introduction
 
@@ -10,18 +10,9 @@ L'objectif principal est de montrer comment injecter les dépendances de manièr
 ## Objectifs du TP
 
 - Appliquer les principes de l'injection de dépendances et du couplage faible.
-- Mettre en place une solution qui permet de basculer dynamiquement entre un DAO classique et un DAO Web Service.
+- Mettre en place une solution qui permet de basculer  entre un DAO BD et un DAO Web Service.
 - Utiliser des interfaces pour assurer une abstraction entre les différentes couches de l'application.
 
-## Architecture du projet
-
-### Architecture du système
-
-Le projet suit une architecture en couches avec une séparation des responsabilités :
-
-- **Couche de présentation** : Gère l'affichage et les interactions avec l'utilisateur.
-- **Couche métier** : Contient la logique d'affaires (calculs, traitements).
-- **Couche d'accès aux données (DAO)** : Permet de récupérer les données, soit depuis une base de données, soit via un Web Service, selon la configuration choisie.
 
 ### Injection de Dépendances et Couplage Faible
 
@@ -31,7 +22,6 @@ L'injection de dépendances est réalisée manuellement en Java. Le projet repos
 
 Le basculement entre les deux implémentations de DAO est effectué via une configuration dans la classe `AppConfig.java`. En fonction de la configuration, l'application utilisera l'une ou l'autre des implémentations.
 
-## Description du projet
 
 ### Fichiers clés du projet
 
@@ -43,3 +33,8 @@ IMetierImpl.java
 Presentation1.java
 Presentation2.java
 config.txt
+
+### Execution
+
+<img width="557" alt="tp1" src="https://github.com/user-attachments/assets/a74ab59f-811b-4fa2-8da8-21c96b79012e" />
+
